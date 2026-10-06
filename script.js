@@ -22,3 +22,11 @@ function mult (A, B){
     ans = A*B
 }
 
+const screen = document.querySelector(".screen")
+const button = document.querySelectorAll(".bnt1")
+
+button.forEach(button => {
+    button.addEventListener("click", (event) => {
+        screen.textContent += event.target.textContent
+    });
+});
